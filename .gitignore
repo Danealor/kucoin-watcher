@@ -1,8 +1,7 @@
 # Custom
 *.ipynb
-/keys/google-credentials.json
-/keys/google-token.pickle
-/keys/kucoin-keys.json
+/keys/*
+!/keys/kucoin-keys-template.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

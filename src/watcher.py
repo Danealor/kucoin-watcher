@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 
-import updater
 import argparse
 from pytimeparse.timeparse import timeparse
 from datetime import datetime, timedelta
 from time import sleep
 
 def mainLoop(interval_sec):
+    import updater
+
     while True:
         print(datetime.now().strftime('[%c]'))
         updater.update()
