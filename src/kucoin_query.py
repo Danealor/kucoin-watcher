@@ -12,7 +12,7 @@ from pathlib import Path
 def to_timestamp(dt):
     return int(round(dt.timestamp() * 1000))
 def from_timestamp(stamp):
-    return datetime.fromtimestamp(1641529052000/1000)
+    return datetime.fromtimestamp(stamp/1000)
 
 
 with open(Path(__file__).parent / '../keys/kucoin-keys.json', 'r') as file:
